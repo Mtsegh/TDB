@@ -17,7 +17,7 @@ mongoose.connect(MONGO_URI).then(() => {
         const PORT = process.env.PORT || 80;
 
         app.get("/", (req, res) => {
-            res.send("Home Page")
+            res.send("Home Page...")
         });
 
         app.listen(PORT, () => {
