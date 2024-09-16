@@ -3,4 +3,4 @@ RUN apk add --no-cache python2 g++ make
 WORKDIR /bot
 RUN npm install --production
 CMD [ "node" "bot.js"]
-EXPOSE 3000
+EXPOSE 80
