@@ -14,7 +14,7 @@ mongoose.connect(MONGO_URI).then(() => {
         const bot = new TelegramBot('7485778029:AAHb3yymLQt1HSBllQcrCVrgUTqRuKU4iN8', { polling: true });
         const app = express();
         app.use(bodyParser.json());
-        const PORT = process.env.PORT || 80;
+        const PORT = process.env.PORT || 3000;
 
         app.get("/", (req, res) => {
             res.send("Home Page...")

@@ -14,6 +14,6 @@ RUN apt-get update && \
 COPY . .
 
 RUN docker build -t image .
-RUN docker run -d -p 80:80 image
+RUN docker run -d -p 3000:3000 image
 
-EXPOSE WEBSITE http://localhost:80
+EXPOSE WEBSITE http://localhost:3000
